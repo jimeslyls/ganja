@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #d8b4fe, #f3e8ff);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#game-content, #results-container {
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#go-btn {
+  background: #3c0d6e !important; /* Dark Purple */
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+#go-btn:hover {
+  background: #2a0a52 !important; /* Even Darker Purple */
+  transform: scale(1.05);
+}
+
+button:not(#go-btn) {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 400px;
+}
+
+button:hover {
+  background: #ff3b2f;
+  transform: scale(1.05);
+}
+
+.answer-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.answer-btn:hover {
+  background: #ffcc00;
+}
+
+.correct {
+  background: #06d6a0 !important;
+}
+
+.incorrect {
+  background: #ef476f !important;
+}
+
+#score {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  #game-content, #results-container {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>60 Second Questions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Game Container -->
+  <div id="game-container">
+    <header>
+      <h1>60 Second Questions</h1>
+      <p>Answer 10 questions in 60 seconds! Each question must be answered in 6 seconds.</p>
+      <button id="go-btn">Start Game</button> <!-- Start Game button -->
+    </header>
+
+    <!-- Main Game Content -->
+    <div id="game-content" style="display: none;">
+      <div id="timer">Time Remaining: 60s</div>
+      <div id="question-timer">Time for this question: 6s</div>
+      <div id="question-container" class="question-box">
+        <p id="question"></p>
+        <div id="answers"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Container (Hidden initially) -->
+  <div id="results-container" style="display:none;">
+    <h2>Your Score: <span id="score"></span></h2>
+    <button id="play-again-btn">Play Again Tomorrow</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
